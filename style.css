@@ -58,100 +58,119 @@
     font-family: "Outfit", sans-serif;
   }
 
+  .container{
+    max-width: 350px;
+    margin: 0 auto; /* To make container center */
+  }
+
   .card{
-    background-color: hsl(216, 50%, 16%);
-    max-width: 380px;
+    margin: 2rem 1rem;
     padding: 20px;
+    background-color:hsl(216, 50%, 16%);
+    border-radius: 15px;
+  }
+
+  .img-top{
     border-radius: 12px;
+    overflow: hidden; /* To apply the border radius to img*/
+    position: relative;
   }
   
-  .card .main-img{
+  .img-top img{
     width: 100%;
     border-radius: 12px;
-    margin-bottom: 20px;
+    display: block; /* Because img is an inline element*/
   }
 
-  .card-components h2{
+  .img-overlay{
+    position: absolute; /* To make that color on image while hovering on it */
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: hsla(178, 100%, 50%, 0.5); /* To lower the opacity */
+    display: none; /* To hide it */
+  }
+
+  .img-overlay img{
+    position: absolute; /* to position the image icon*/
+    width: 50px;
+    left: 50%;
+    top: 50%; 
+    transform: translate(-50%, -50%);
+  }
+
+  .img-top:hover .img-overlay{
+    display: block; /* To apply icon & blue color on hovering */
+  }
+  
+  .box-text a{
     font-weight: 600;
     color: white;
-    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 21px;
+    padding: 20px 0;
+    display: inline-block; /* To apply the padding because anchor tag is by default and inline element*/
   }
 
-  .para0{
-    margin-bottom: 20px;
+  .box-text a:hover{
+    color: hsla(178, 100%, 50%);
   }
 
-  .card-components p{
-    font-size: 18px;
-  }
-
-  .card-components > p{
+  p{
     color: hsl(215, 51%, 70%);
   }
-
-  .text{
+  
+  .flex{
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 20px;
+    padding: 25px 0;
   }
 
-  .svg1{
+  .eth, .days{
     display: flex;
-    flex-direction: row;
     align-items: center;
   }
 
-  .svg2{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .text .para1{
-    color: hsl(178, 100%, 50%);
+  .eth p{
+    color: hsla(178, 100%, 50%);
     font-weight: 600;
-    padding-left: 10px;
+    padding-left: 7px;
   }
 
-  .text .para2{
-    color: hsl(215, 51%, 70%);
-    padding-left: 5px;
+  .days p{
+    padding-left: 7px;
   }
-
-  .developer{
+  
+  hr{
+    border-color: hsl(215, 32%, 27%);
+  }
+  
+  .author{
     display: flex;
-    flex-direction: row;
     align-items: center;
-    color: white;
-    margin-top: 15px;
+    padding-top: 5px;
   }
 
-  .developer img{
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    object-fit: cover;
-    border: 2px solid white;
-    margin-right: 20px;
+  .author img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-right: 15px;
   }
 
-  span{
-    color: hsl(215, 51%, 70%);
-    padding-right: 10px;
+  .author p a .name{
+    color: #fff;
+    font-size: 16px;
   }
-
-  h2:hover, .para3:hover{
-    transition: color 0.3s ease;
-    color: hsl(178, 100%, 50%);
-    cursor: pointer;
-  }
-
- 
   
+  .author p a .name:hover{
+    color: hsla(178, 100%, 50%);
+  }
   
 
- 
+  
 
   
