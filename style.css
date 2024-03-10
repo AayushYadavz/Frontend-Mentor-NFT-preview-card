@@ -1,0 +1,157 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+  body{
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: "Outfit", sans-serif;
+  }
+
+  .card{
+    background-color: hsl(216, 50%, 16%);
+    max-width: 380px;
+    padding: 20px;
+    border-radius: 12px;
+  }
+  
+  .card .main-img{
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 20px;
+  }
+
+  .card-components h2{
+    font-weight: 600;
+    color: white;
+    margin-bottom: 20px;
+  }
+
+  .para0{
+    margin-bottom: 20px;
+  }
+
+  .card-components p{
+    font-size: 18px;
+  }
+
+  .card-components > p{
+    color: hsl(215, 51%, 70%);
+  }
+
+  .text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .svg1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .svg2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .text .para1{
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+    padding-left: 10px;
+  }
+
+  .text .para2{
+    color: hsl(215, 51%, 70%);
+    padding-left: 5px;
+  }
+
+  .developer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    margin-top: 15px;
+  }
+
+  .developer img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    object-fit: cover;
+    border: 2px solid white;
+    margin-right: 20px;
+  }
+
+  span{
+    color: hsl(215, 51%, 70%);
+    padding-right: 10px;
+  }
+
+  h2:hover, .para3:hover{
+    transition: color 0.3s ease;
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+  }
+
+ 
+  
+  
+
+ 
+
+  
