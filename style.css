@@ -111,6 +111,7 @@
     font-size: 21px;
     padding: 20px 0;
     display: inline-block; /* To apply the padding because anchor tag is by default and inline element*/
+    text-decoration: none;
   }
 
   .box-text a:hover{
@@ -125,7 +126,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 25px 0;
+    padding: 20px 0;
   }
 
   .eth, .days{
@@ -150,7 +151,7 @@
   .author{
     display: flex;
     align-items: center;
-    padding-top: 5px;
+    padding-top: 10px;
   }
 
   .author img{
@@ -159,14 +160,16 @@
     border-radius: 50%;
     border: 2px solid #fff;
     margin-right: 15px;
+    object-fit: cover;
   }
 
-  .author p a .name{
+  .author p .name{
     color: #fff;
     font-size: 16px;
+    text-decoration: none;
   }
   
-  .author p a .name:hover{
+  .author p .name:hover{
     color: hsla(178, 100%, 50%);
   }
   
