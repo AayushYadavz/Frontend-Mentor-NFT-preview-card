@@ -102,6 +102,7 @@
 
   .img-top:hover .img-overlay{
     display: block; /* To apply icon & blue color on hovering */
+    cursor: pointer;
   }
   
   .box-text a{
